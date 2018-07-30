@@ -1,0 +1,278 @@
+/**************************
+	VARIABLES
+**************************/
+$dark: #2D2830;
+$light: #F1F1EB;
+$brand: #CE4554;
+$accent: #878593;
+$accent2: #A37B71;
+
+$robotoNav:  'Roboto Mono', monospace;
+$roboto: 'Roboto', sans-serif;
+
+/**************************
+	BASE VALUES
+**************************/
+html{
+	font-size: 16px;
+}
+
+main{
+	font-family: $roboto;
+}
+
+p{
+	font-size: 1.2rem;
+	line-height: 2rem;
+	padding: 10px;
+}
+
+/**************************
+	TOP HEADER
+**************************/
+.top-header{
+	background: $dark;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.brand{
+		 color: $light;
+		 border: 2px solid $light;
+		 font-size: 2rem;
+	}
+	.brand:hover{
+		text-decoration: none;
+	}
+	.top-header-social-media{
+		.fab{
+			color: $light;
+			font-size: 2rem;
+			padding: 10px;
+		}
+	}
+	.hamburger{
+		display: block;
+		width: 75%;
+		margin: 0px auto;
+	}
+	.brand, .hamburger{
+		padding: 5px;
+		margin: 5px;
+		cursor: pointer;
+	}
+}
+
+/**************************
+	TOP NAV
+**************************/
+.top-nav{
+	.nav-ul{
+		background: $light;
+		display: flex;
+		justify-content: center;
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+		font-family: $robotoNav;
+		font-size: 1.2rem;
+	}
+	li{
+		
+	}
+	a{
+		color: $brand;
+		display: block;
+		padding: 15px;
+		text-decoration: none;	
+		text-transform: uppercase;
+	}
+	a:hover{
+		background: $brand;
+		color: $light;
+	}
+	.active-link{
+		text-decoration: underline;
+	}
+}
+
+/**************************
+	LANDING PAGE
+**************************/
+#particles-js{
+	height: 100vh;
+	background: $dark;
+}
+
+.landing-page-card{
+	background: $light;
+	position: absolute;
+	top: 50vh;
+	left: 0vw;
+	right: 0vw;
+	width: 35vw;
+	margin: 0px auto;
+	text-align: center;
+	padding: 10px;
+	button{
+		padding: 10px;
+		background: $brand;
+		border: none;
+		color: $light;
+		cursor: pointer;
+	}
+}
+
+.circle-down{
+	width: 10%;
+	position: absolute;
+	bottom: 10vh;
+	left: 0vw;
+	right: 0vw;
+	margin: 0px auto;
+	text-align: center;
+	.fas{
+		font-size: 3rem;
+		color: $light;
+	}
+	.fas:hover{
+		cursor: pointer;
+	}
+}
+
+.typed-js{
+	color: $brand;
+}
+
+/**************************
+	MAIN CONTENT
+**************************/
+.main-content{
+	.container, .container-fluid{
+		margin-bottom: 25px;
+	}
+	.h2-main{
+		color: $brand;
+		text-align:  center;
+		padding: 25px;
+	}
+	.h2-main-black{
+		color: $dark;
+		text-align:  center;
+		padding: 25px;
+	}
+	/**************************
+		SERVICES
+	**************************/
+	.carousel-caption{
+		background: $dark;
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		h3, p{
+			color: $light;
+		}
+		a{
+			color: $brand;
+		}
+	}
+	.carousel-control-prev-icon, .carousel-control-next-icon {
+	  height: 100px;
+	  width: 100px;
+	  background-size: 100%, 100%;
+	  background-image: none;
+	}
+
+	.carousel-control-next-icon:after
+	{
+	  content: '>';
+	  font-size: 55px;
+	  color: $light;
+	}
+
+	.carousel-control-prev-icon:after {
+	  content: '<';
+	  font-size: 55px;
+	  color: $light;
+	}
+	.img-center{
+		width: 75%;
+		margin: 0px auto;
+		display: block;
+	}
+	.services-paragraph{
+		display: table;
+		background: $dark;
+		color: $light;
+		padding: 0px;
+		width:  75%;
+		height: 200px;
+		margin: 0px auto;
+		p{
+			display: table-cell;
+			padding: 0px 10px;
+		}
+	}
+	/**************************
+		PORTFOLIO
+	**************************/	
+
+
+	/**************************
+		TOP NAV
+	**************************/
+	.btn-div{
+		display: flex;
+		justify-content: flex-end;
+	}
+	.btn-send-message{
+		background: $brand;
+		border: none;
+		height: 3vh;
+		color: $light;
+	}
+}
+
+
+/**************************
+	MEDIA QUERIES
+**************************/
+@media only screen and (max-width: 430px) {
+    .top-nav{
+    	.nav-ul{
+    		display: none;
+    	}
+    	.nav-mobile{
+    		display: flex;
+    		flex-direction: column;
+    		list-style-type: none;
+    		margin: 0px;
+    		padding: 0px;
+    	}
+    }
+    .top-header{
+    	.top-header-social-media{
+    		display: none;
+    	}
+    }
+}
+
+@media only screen and (max-width: 638px) {
+    .landing-page-card{
+    	width: 100vw;
+    }
+}
+
+@media only screen and (min-width: 430px) {
+	#hamburger{
+		display: none;
+	}
+	.nav-mobile{
+		display: none;
+	}
+	.top-nav{
+		.top-nav-social-media{
+			display: none;
+		}
+	}
+}
