@@ -14,7 +14,7 @@ hamburger.addEventListener('click', function(){
 
 // Typewriter on landing page.
 let options = {
-  strings: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery", "SASS", "Photoshop", "Sony Vegas"],
+  strings: ["HTML5", "CSS3", "JavaScript", "Bootstrap 4", "jQuery", "SASS"],
   typeSpeed: 60,
   showCursor: false,
   loop: true,

@@ -37,7 +37,6 @@ p{
 	align-items: center;
 	.brand{
 		 color: $light;
-		 border: 2px solid $light;
 		 font-size: 2rem;
 	}
 	.brand:hover{
@@ -104,15 +103,17 @@ p{
 }
 
 .landing-page-card{
-	background: $light;
 	position: absolute;
 	top: 50vh;
 	left: 0vw;
 	right: 0vw;
-	width: 35vw;
+	width: 100vw;
 	margin: 0px auto;
 	text-align: center;
 	padding: 10px;
+	h1{
+		color: $light;
+	}
 	button{
 		padding: 10px;
 		background: $brand;
@@ -237,7 +238,9 @@ p{
 /**************************
 	MEDIA QUERIES
 **************************/
-@media only screen and (max-width: 430px) {
+
+// NAVBAR FOR TABLET AND DESKTOP.
+@media only screen and (max-width: 540px) {
     .top-nav{
     	.nav-ul{
     		display: none;
@@ -257,13 +260,8 @@ p{
     }
 }
 
-@media only screen and (max-width: 638px) {
-    .landing-page-card{
-    	width: 100vw;
-    }
-}
-
-@media only screen and (min-width: 430px) {
+// NAVBAR FOR MOBILE.
+@media only screen and (min-width: 540px) {
 	#hamburger{
 		display: none;
 	}
