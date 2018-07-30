@@ -115,6 +115,7 @@ p{
 		color: $light;
 	}
 	button{
+		margin-top: 20px;
 		padding: 10px;
 		background: $brand;
 		border: none;
@@ -248,6 +249,8 @@ p{
     	.nav-mobile{
     		display: flex;
     		flex-direction: column;
+    		justify-content: flex-start;
+    		height: 100vh;
     		list-style-type: none;
     		margin: 0px;
     		padding: 0px;
@@ -271,6 +274,15 @@ p{
 	.top-nav{
 		.top-nav-social-media{
 			display: none;
+		}
+	}
+}
+
+// RESPONSIVE FONT FOR LANDING PAGE CARD.
+@media only screen and (max-width: 500px) {
+	.landing-page-card{
+		h1{
+			font-size: 1.1rem;
 		}
 	}
 }
