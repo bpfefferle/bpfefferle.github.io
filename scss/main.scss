@@ -7,24 +7,23 @@ $brand: #CE4554;
 $accent: #878593;
 $accent2: #A37B71;
 
-$robotoNav:  'Roboto Mono', monospace;
-$roboto: 'Roboto', sans-serif;
+$raleway: 'Raleway', sans-serif;
 
 /**************************
 	BASE VALUES
 **************************/
-html{
+body{
 	font-size: 16px;
-}
-
-main{
-	font-family: $roboto;
+	font-family: $raleway;
+	color: $dark;
 }
 
 p{
-	font-size: 1.2rem;
-	line-height: 2rem;
-	padding: 10px;
+
+}
+
+img{
+	display: block;
 }
 
 /**************************
@@ -37,7 +36,6 @@ p{
 	align-items: center;
 	.brand{
 		 color: $light;
-		 font-size: 2rem;
 	}
 	.brand:hover{
 		text-decoration: none;
@@ -51,13 +49,11 @@ p{
 	}
 	.hamburger{
 		display: block;
-		width: 75%;
-		margin: 0px auto;
 	}
 	.brand, .hamburger{
+		cursor: pointer;
 		padding: 5px;
 		margin: 5px;
-		cursor: pointer;
 	}
 }
 
@@ -72,8 +68,6 @@ p{
 		list-style-type: none;
 		margin: 0px;
 		padding: 0px;
-		font-family: $robotoNav;
-		font-size: 1.2rem;
 	}
 	li{
 		
@@ -111,7 +105,7 @@ p{
 	margin: 0px auto;
 	text-align: center;
 	padding: 10px;
-	h1{
+	h1, h2{
 		color: $light;
 	}
 	button{
@@ -149,76 +143,25 @@ p{
 	MAIN CONTENT
 **************************/
 .main-content{
-	.container, .container-fluid{
-		margin-bottom: 25px;
-	}
-	.h2-main{
+	.h2-brand{
 		color: $brand;
 		text-align:  center;
+		text-transform: uppercase;
 		padding: 25px;
 	}
-	.h2-main-black{
-		color: $dark;
-		text-align:  center;
-		padding: 25px;
+	h2{
+		text-align: center;
+	}
+	a{
+		color: $brand;
 	}
 	/**************************
 		SERVICES
 	**************************/
-	.carousel-caption{
-		background: $dark;
-		position: absolute;
-		bottom: 0px;
-		left: 0px;
-		right: 0px;
-		h3, p{
-			color: $light;
-		}
-		a{
-			color: $brand;
-		}
-	}
-	.carousel-control-prev-icon, .carousel-control-next-icon {
-	  height: 100px;
-	  width: 100px;
-	  background-size: 100%, 100%;
-	  background-image: none;
-	}
 
-	.carousel-control-next-icon:after
-	{
-	  content: '>';
-	  font-size: 55px;
-	  color: $light;
-	}
-
-	.carousel-control-prev-icon:after {
-	  content: '<';
-	  font-size: 55px;
-	  color: $light;
-	}
-	.img-center{
-		width: 75%;
-		margin: 0px auto;
-		display: block;
-	}
-	.services-paragraph{
-		display: table;
-		background: $dark;
-		color: $light;
-		padding: 0px;
-		width:  75%;
-		height: 200px;
-		margin: 0px auto;
-		p{
-			display: table-cell;
-			padding: 0px 10px;
-		}
-	}
 	/**************************
 		PORTFOLIO
 	**************************/	
-
 
 	/**************************
 		TOP NAV
@@ -235,6 +178,17 @@ p{
 	}
 }
 
+/**************************
+	FOOTER
+**************************/
+footer{
+	background: $dark;
+	color: $light;
+	p{
+		width: 50vw;
+		margin: 0px auto;
+	}
+}
 
 /**************************
 	MEDIA QUERIES
@@ -280,9 +234,5 @@ p{
 
 // RESPONSIVE FONT FOR LANDING PAGE CARD.
 @media only screen and (max-width: 500px) {
-	.landing-page-card{
-		h1{
-			font-size: 1.1rem;
-		}
-	}
+
 }
