@@ -200,6 +200,13 @@ footer{
 		width: 50vw;
 		margin: 0px auto;
 	}
+	.footer-social-media{
+		.fab{
+			color: $light;
+			font-size: 2rem;
+			padding: 10px;
+		}
+	}
 }
 
 /**************************
