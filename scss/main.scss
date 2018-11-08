@@ -6,7 +6,6 @@ $light: #F1F1EB;
 $brand: #CE4554;
 $accent: #878593;
 $accent2: #A37B71;
-
 $raleway: 'Raleway', sans-serif;
 
 /**************************
@@ -19,7 +18,9 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6{
-	font-size: 1.3rem;
+	font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
 p{
@@ -28,6 +29,15 @@ p{
 
 img{
 	display: block;
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px;
+    background: $brand;
+    border: none;
+    color: $light;
+    cursor: pointer;
 }
 
 /**************************
@@ -39,21 +49,15 @@ img{
 	justify-content: space-between;
 	align-items: center;
 	.my-logo{
-		width: 15%;
+		width: 25%;
 		padding: 10px;
 	}
 	.top-header-social-media{
-		.fab{
+		.far, .fab{
 			color: $light;
 			font-size: 2rem;
 			padding: 10px;
 		}
-	}
-	.hamburger{
-		display: block;
-		cursor: pointer;
-		padding: 5px;
-		margin: 5px;
 	}
 }
 
@@ -104,14 +108,7 @@ img{
 	padding: 10px;
 	h1, h2{
 		color: $light;
-	}
-	button{
-		margin-top: 20px;
-		padding: 10px;
-		background: $brand;
-		border: none;
-		color: $light;
-		cursor: pointer;
+        font-size: 1rem;
 	}
 }
 
@@ -159,15 +156,38 @@ img{
 	/**************************
 		PORTFOLIO
 	**************************/	
-
+    .project-thumbnail{
+        margin: 0.5rem 0rem;  
+    }
+    
 	/**************************
 		CONTACT
 	**************************/	
-	.jumbotron{
-		p{
-			font-size: 2rem;
-		}
-	}
+    .contact-form{
+        .name, .email, .subject, .message{
+            border: 1px solid $dark;
+            width: 100%;
+            height: 2.5rem;
+            margin: 0.5rem 0rem;
+            text-indent: 1rem;
+        }  
+        .message{
+            height: 5rem;
+        }
+        input:focus{
+            outline: none;
+        }
+    }
+    
+    .contact-social-media{
+        display: flex;
+        justify-content: center;
+        .far, .fab{
+            font-size: 5rem;
+            color: $dark;
+        }
+    }
+    
 	/**************************
 		TOP NAV
 	**************************/
@@ -194,7 +214,7 @@ footer{
 		margin: 0px auto;
 	}
 	.footer-social-media{
-		.fab{
+		.far, .fab{
 			color: $light;
 			font-size: 2rem;
 			padding: 10px;
