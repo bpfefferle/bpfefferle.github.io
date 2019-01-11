@@ -158,6 +158,10 @@ button{
 	**************************/	
     .project-thumbnail{
         margin: 0.5rem 0rem;  
+	}
+	
+	.project-thumbnail:hover{
+		opacity: 0.9;  
     }
     
 	/**************************
