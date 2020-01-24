@@ -24,7 +24,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 p{
-	font-size: 1rem;
+	font-size: 18px;
 }
 
 img{
@@ -48,11 +48,17 @@ button{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 1rem;
 	.my-logo{
-		width: 25%;
-		padding: 10px;
+		width: 150px;
+	}
+	.hamburger{
+		cursor: pointer;
 	}
 	.top-header-social-media{
+		display: flex;
+		justify-content: right;
+		margin-right: 1rem;
 		.far, .fab{
 			color: $light;
 			font-size: 2rem;
@@ -72,9 +78,6 @@ button{
 		list-style-type: none;
 		margin: 0px;
 		padding: 0px;
-	}
-	li{
-		
 	}
 	a{
 		color: $brand;
@@ -137,6 +140,8 @@ button{
 	MAIN CONTENT
 **************************/
 .main-content{
+	width: 768px;
+	margin: 0px auto;
 	.h2-brand{
 		color: $brand;
 		text-align:  center;
@@ -149,10 +154,6 @@ button{
 	a{
 		color: $brand;
 	}
-	/**************************
-		SERVICES
-	**************************/
-
 	/**************************
 		PORTFOLIO
 	**************************/	
@@ -230,7 +231,6 @@ footer{
 	MEDIA QUERIES
 **************************/
 
-// NAVBAR FOR TABLET AND DESKTOP.
 @media only screen and (max-width: 540px) {
     .top-nav{
     	.nav-ul{
@@ -253,7 +253,6 @@ footer{
     }
 }
 
-// NAVBAR FOR MOBILE.
 @media only screen and (min-width: 540px) {
 	#hamburger{
 		display: none;
@@ -266,9 +265,4 @@ footer{
 			display: none;
 		}
 	}
-}
-
-// RESPONSIVE FONT FOR LANDING PAGE CARD.
-@media only screen and (max-width: 500px) {
-
 }
