@@ -58,15 +58,11 @@ button{
 	.top-header-social-media{
 		display: flex;
 		justify-content: right;
-		align-items: center;
 		margin-right: 1rem;
 		.far, .fab{
 			color: $light;
 			font-size: 2rem;
 			padding: 10px;
-		}
-		.fb_iframe_widget{
-			margin-left: 25px;
 		}
 	}
 }
