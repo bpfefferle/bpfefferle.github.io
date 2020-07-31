@@ -155,6 +155,27 @@ button{
 		color: $brand;
 	}
 	/**************************
+		SKILLS
+	**************************/	
+	.progress:nth-child(odd){
+		.progress-bar{
+			background: $dark;
+		}
+	}
+	.progress:nth-child(even){
+		.progress-bar{
+			background: $brand;
+		}
+	}
+
+	.card{
+		margin: 10px 0px;
+		.btn{
+			background: $brand;
+			color: $light;
+		}
+	}
+	/**************************
 		PORTFOLIO
 	**************************/	
     .project-thumbnail{
