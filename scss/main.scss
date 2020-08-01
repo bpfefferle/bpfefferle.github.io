@@ -183,18 +183,10 @@ button{
 			background: $brand;
 			color: $light;
 		}
+		.card-title{
+			text-transform: none;
+		}
 	}
-	/**************************
-		PORTFOLIO
-	**************************/	
-    .project-thumbnail{
-        margin: 0.5rem 0rem;  
-	}
-	
-	.project-thumbnail:hover{
-		opacity: 0.9;  
-    }
-    
 	/**************************
 		CONTACT
 	**************************/	
