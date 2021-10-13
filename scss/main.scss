@@ -12,7 +12,7 @@ $raleway: 'Raleway', sans-serif;
 	BASE VALUES
 **************************/
 body{
-	font-size: 16px;
+	font-size: 17px;
 	font-family: $raleway;
 	color: $dark;
 }
@@ -50,7 +50,7 @@ button{
 	align-items: center;
 	padding: 1rem;
 	.my-logo{
-		width: 150px;
+		width: 100px;
 	}
 	.hamburger{
 		cursor: pointer;
