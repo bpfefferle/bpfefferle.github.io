@@ -9,4 +9,4 @@ effect.
 &copy; Brent Pfefferle
 
 ## Personal Portfolio
-[Personal Portfolio](https://bpfefferle.github.io/)
+[Link to website](https://bpfefferle.github.io/)
