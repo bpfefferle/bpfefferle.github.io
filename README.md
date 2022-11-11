@@ -8,5 +8,6 @@ effect.
 
 &copy; Brent Pfefferle
 
-## Personal Portfolio
+## Links
+
 [Link to website](https://bpfefferle.github.io/)
