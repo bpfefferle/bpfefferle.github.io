@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-![portfolio](img/readme-preview.png)
+![portfolio](img/readme.png)
 
 This is my personal portfolio website developed with Bootstrap and SASS, this website is 
 responsive and features a simple design with an attractive landing page that has an animated 
