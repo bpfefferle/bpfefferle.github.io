@@ -93,7 +93,7 @@ particlesJS('particles-js',
         "enable": false,
         "mode": "repulse"
       },
-      "resize": true
+      "resize": false
     },
     "modes": {
       "grab": {
@@ -122,6 +122,4 @@ particlesJS('particles-js',
     }
   },
   "retina_detect": true
-}
-
-);
+})
