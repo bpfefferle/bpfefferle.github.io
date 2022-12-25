@@ -98,6 +98,23 @@ button{
 	.skills{
 		grid-area: skills;
 	}
+	.skills-grid{
+		padding: 0px;
+		margin: 0px;
+		list-style-type: none;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: center;
+		align-items: center;
+		li{
+			display: flex;
+			justify-content: center;
+			margin: 0.5rem;
+			img{
+				padding: 0.5rem;
+			}
+		}
+	}
 	#particles-js{
 		min-height: 100%;
 		background: $brand;
