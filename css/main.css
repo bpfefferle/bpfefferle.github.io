@@ -1,1 +1,241 @@
-*{font-size:20px;font-family:"Raleway",sans-serif;line-height:2rem;color:#2D2830}body{background:#F1F1EB}h1,h2,h3,h4,h5,h6{font-size:1.5rem;font-weight:900;text-transform:uppercase}img{display:block}button{margin-top:20px;padding:10px;background:#CE4554;border:none;color:#F1F1EB;cursor:pointer}.top-header{background:#2D2830;display:flex;justify-content:space-between;align-items:center;padding:1rem}.top-header .my-logo{width:100px}.top-header .top-header-social-media{display:flex;justify-content:right;padding:1rem}.top-header .top-header-social-media .far,.top-header .top-header-social-media .fab{color:#F1F1EB;font-size:2rem;padding:10px}.hvr-grow{display:inline-block;vertical-align:middle;transform:translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);backface-visibility:hidden;-moz-osx-font-smoothing:grayscale;transition-duration:0.3s;transition-property:transform}.hvr-grow:hover,.hvr-grow:focus,.hvr-grow:active{transform:scale(1.1)}.main-grid{max-width:100%;display:grid;grid-template-areas:"about projects" "skills projects" "contact projects";grid-template-columns:450px 1fr}.main-grid .about{grid-area:about}.main-grid .about img{max-width:100%}.main-grid .about #pic-degree{max-width:100%;margin-top:20px}.main-grid .skills{grid-area:skills}.main-grid .skills-grid{padding:0px;margin:0px;list-style-type:none;display:grid;grid-template-columns:repeat(3, 1fr);justify-content:center;align-items:center}.main-grid .skills-grid li{display:flex;justify-content:center;margin:0.5rem}.main-grid .skills-grid li img{padding:0.5rem}.main-grid #particles-js{min-height:100%;background:#CE4554}.main-grid .projects{grid-area:projects;position:relative}.main-grid .projects .header{background-color:#F1F1EB;position:absolute;top:-100px;left:0px;right:0px;height:100px;padding:0.5rem;text-align:center}.main-grid .projects .grid-container{padding:25px;display:grid;grid-template-columns:repeat(auto-fit, minmax(400px, 1fr));justify-content:space-evenly;justify-items:center;align-content:space-evenly;align-items:center;position:absolute;top:200px;left:25px;right:25px;max-height:100%}.main-grid .projects .grid-container .item1,.main-grid .projects .grid-container .item2,.main-grid .projects .grid-container .item3{max-width:100%}.main-grid .projects .grid-container .item1 img,.main-grid .projects .grid-container .item2 img,.main-grid .projects .grid-container .item3 img{max-width:100%;margin:0px auto;cursor:pointer}.main-grid .projects .grid-container .item1 h2,.main-grid .projects .grid-container .item2 h2,.main-grid .projects .grid-container .item3 h2{background:#F1F1EB;padding:0.5rem}.main-grid .contact{grid-area:contact}.main-grid .contact .far,.main-grid .contact .fab{color:#2D2830;font-size:2rem;padding:10px}.main-grid .about h2,.main-grid .skills h2,.main-grid .contact h2{color:#CE4554}.main-grid .projects .header h2,.main-grid .projects a{color:#CE4554}.main-grid .about,.main-grid .skills,.main-grid .contact,.main-grid .projects,.main-grid .grid-container>*{padding:25px}.main-grid .about p,.main-grid .skills p,.main-grid .contact p,.main-grid .projects p,.main-grid .grid-container>* p{margin:10px 0px}footer{background:#2D2830;color:#F1F1EB}footer .footer-social-media .far,footer .footer-social-media .fab{color:#F1F1EB;font-size:2rem;padding:10px}@media only screen and (max-width: 950px){.main-grid{max-width:100%;display:flex;flex-direction:column}.main-grid .about header img{max-width:50%;float:left;margin-right:20px}.main-grid #particles-js{background:#CE4554}.main-grid .projects{all:initial;position:relative;height:2000px}.main-grid .projects .grid-container{all:initial;display:flex;flex-direction:column;justify-content:center;position:absolute;top:0px;bottom:0px;left:0px;right:0px}.main-grid .projects .grid-container .header{background-color:#F1F1EB;position:absolute;top:0px;height:100px;text-align:left}.main-grid .projects .grid-container .item1,.main-grid .projects .grid-container .item2,.main-grid .projects .grid-container .item3{max-width:100%}.main-grid .projects .grid-container .item1 h2,.main-grid .projects .grid-container .item2 h2,.main-grid .projects .grid-container .item3 h2{display:none}.main-grid .projects .grid-container .item1 img,.main-grid .projects .grid-container .item2 img,.main-grid .projects .grid-container .item3 img{max-width:100%;margin:0px auto;cursor:pointer}}@media only screen and (max-width: 325px){.top-header .top-header-social-media .far,.top-header .top-header-social-media .fab{font-size:1.5rem}}@media only screen and (max-width: 400px){.main-grid .about header img{min-width:100%;margin:0px 0px 15px 0px}.main-grid .projects{height:1500px}}@media only screen and (max-width: 330px){.main-grid .projects{height:1100px}.main-grid .projects .grid-container .item1{margin-top:100px}}
+/**************************
+	VARIABLES
+**************************/
+/**************************
+	BASE VALUES
+**************************/
+html {
+  min-height: 100%;
+}
+
+* {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  line-height: 2rem;
+  color: #2D2830;
+}
+
+body {
+  background: #F1F1EB;
+  min-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+img {
+  display: block;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background: #CE4554;
+  border: none;
+  color: #F1F1EB;
+  cursor: pointer;
+}
+
+/**************************
+	TOP HEADER
+**************************/
+.top-header {
+  background: #2D2830;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 140px;
+}
+.top-header .my-logo {
+  width: 100px;
+}
+.top-header .top-header-social-media {
+  display: flex;
+  justify-content: right;
+  padding: 1rem;
+}
+.top-header .top-header-social-media .far, .top-header .top-header-social-media .fab {
+  color: #F1F1EB;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+/**************************
+	MAIN CONTENT
+**************************/
+.main-grid {
+  max-width: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-areas: "about projects" "skills projects" "contact projects";
+  grid-template-columns: 450px 1fr;
+}
+.main-grid .about {
+  grid-area: about;
+}
+.main-grid .about img {
+  max-width: 100%;
+}
+.main-grid .about #pic-degree {
+  max-width: 100%;
+  margin-top: 20px;
+}
+.main-grid .skills {
+  grid-area: skills;
+}
+.main-grid .skills-grid {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.main-grid .skills-grid li {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+}
+.main-grid .skills-grid li img {
+  padding: 0.5rem;
+}
+.main-grid #particles-js {
+  background: #CE4554;
+  min-height: 100%;
+  padding: 0px;
+}
+.main-grid .projects {
+  grid-area: projects;
+}
+.main-grid .projects .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(512px, 1fr));
+  position: absolute;
+  top: 140px;
+  left: 450px;
+  right: 0px;
+  bottom: 0px;
+  min-height: 100%;
+}
+.main-grid .projects .grid-container .item1, .main-grid .projects .grid-container .item2, .main-grid .projects .grid-container .item3, .main-grid .projects .grid-container .item4 {
+  margin: 15px;
+}
+.main-grid .projects .grid-container .item1 a img, .main-grid .projects .grid-container .item2 a img, .main-grid .projects .grid-container .item3 a img, .main-grid .projects .grid-container .item4 a img {
+  max-width: 100%;
+  margin: 0px auto;
+  cursor: pointer;
+}
+.main-grid .contact {
+  grid-area: contact;
+}
+.main-grid .contact .far, .main-grid .contact .fab {
+  color: #2D2830;
+  font-size: 2rem;
+  padding: 10px;
+}
+.main-grid .about h2, .main-grid .skills h2, .main-grid .contact h2 {
+  color: #CE4554;
+}
+.main-grid .projects .header h2, .main-grid .projects a {
+  color: #CE4554;
+}
+.main-grid .about, .main-grid .skills, .main-grid .contact, .main-grid .projects, .main-grid .grid-container > * {
+  padding: 25px;
+}
+.main-grid .about p, .main-grid .skills p, .main-grid .contact p, .main-grid .projects p, .main-grid .grid-container > * p {
+  margin: 10px 0px;
+}
+
+/**************************
+	FOOTER
+**************************/
+footer {
+  background: #2D2830;
+  color: #F1F1EB;
+}
+footer .footer-social-media .far, footer .footer-social-media .fab {
+  color: #F1F1EB;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+/**************************
+	MEDIUM DEVICES
+**************************/
+@media only screen and (max-width: 970px) {
+  .main-grid {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-grid .about header img {
+    max-width: 50%;
+    float: left;
+    margin-right: 20px;
+  }
+  .main-grid #particles-js {
+    background: #CE4554;
+    height: 2248px;
+    padding: 0px;
+  }
+  .main-grid .projects .grid-container {
+    all: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+  }
+  .main-grid .projects .grid-container .item1, .main-grid .projects .grid-container .item2, .main-grid .projects .grid-container .item3, .main-grid .projects .grid-container .item4 {
+    max-width: 100%;
+    margin: 0px auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main-grid #particles-js {
+    background: #CE4554;
+    height: 2000px;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .main-grid #particles-js {
+    background: #CE4554;
+    height: 1800px;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .main-grid #particles-js {
+    background: #CE4554;
+    height: 1600px;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .main-grid #particles-js {
+    background: #CE4554;
+    height: 1320px;
+    padding: 0px;
+  }
+}
+/**************************
+	SMALLER DEVICES
+**************************/
+@media only screen and (max-width: 325px) {
+  .top-header .top-header-social-media .far, .top-header .top-header-social-media .fab {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .main-grid .about header img {
+    min-width: 100%;
+    margin: 0px 0px 15px 0px;
+  }
+}/*# sourceMappingURL=main.css.map */
