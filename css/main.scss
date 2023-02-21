@@ -126,9 +126,22 @@ button
 		background: $brand;
 		min-height: 100%;
 		padding: 0px;
+		overflow: hidden;
 	}
 	.projects
 	{
+		.description
+		{
+			background-color: $light;
+			color: $brand;
+			position: relative;
+			top: 25px;
+			width: 75%;
+			margin: 0px auto;
+			border-radius: 1%;
+			text-align: center;
+			a{color: $brand;}
+		}
 		grid-area: projects;
 		.grid-container
 		{
@@ -140,6 +153,7 @@ button
 			right: 0px;
 			bottom: 0px;
 			min-height: 100%;
+			margin-top: 325px;
 		}
 		.grid-container
 		{
@@ -148,6 +162,7 @@ button
 				margin: 15px;
 				a img
 				{
+					border-radius: 1%;
 					max-width: 100%;
 					margin: 0px auto;
 					cursor: pointer;
@@ -172,13 +187,7 @@ button
 			color: $brand;
 		}
 	}
-	.projects{
-		.header h2, a
-		{
-			color: $brand;
-		}
-	}
-	.about, .skills, .contact, .projects, .grid-container > *
+	.about, .skills, .contact, .projects, .projects .description, .grid-container > *
 	{
 		padding: 25px;
 		p
@@ -207,7 +216,7 @@ footer
 /**************************
 	MEDIUM DEVICES
 **************************/
-@media only screen and (max-width: 970px)
+@media only screen and (max-width: 1040px)
 {
 	.main-grid
 	{
@@ -229,11 +238,17 @@ footer
 		#particles-js
 		{
 			background: $brand;
-			height: 2248px;
+			height: 2434px;
 			padding: 0px;
 		}
 		.projects
 		{
+			.description
+			{
+				position: static;
+				width: 100%;
+				text-align: left;
+			}
 			.grid-container
 			{
 				all: initial;
@@ -253,14 +268,38 @@ footer
 	}
 }
 
-// Adjust height on canvas element for responsiveness.
+// Adjust height of canvas element so that project thumbnails fit.
+@media only screen and (max-width: 949px)
+{
+	.main-grid
+	{
+		#particles-js
+		{
+			background: $brand;
+			height: 2474px;
+			padding: 0px;
+		}
+	}
+}
+@media only screen and (max-width: 662px)
+{
+	.main-grid
+	{
+		#particles-js
+		{
+			background: $brand;
+			height: 2514px;
+			padding: 0px;
+		}
+	}
+}
 @media only screen and (max-width: 500px)
 {
 	.main-grid
 	{
 		#particles-js{
 			background: $brand;
-			height: 2000px;
+			height: 2306px;
 			padding: 0px;
 		}
 	}
@@ -271,7 +310,7 @@ footer
 	{
 		#particles-js{
 			background: $brand;
-			height: 1800px;
+			height: 2106px;
 			padding: 0px;
 		}
 	}
@@ -282,18 +321,29 @@ footer
 	{
 		#particles-js{
 			background: $brand;
-			height: 1600px;
+			height: 1946px;
 			padding: 0px;
 		}
 	}
 }
-@media only screen and (max-width: 330px)
+@media only screen and (max-width: 350px)
 {
 	.main-grid
 	{
 		#particles-js{
 			background: $brand;
-			height: 1320px;
+			height: 1786px;
+			padding: 0px;
+		}
+	}
+}
+@media only screen and (max-width: 300px)
+{
+	.main-grid
+	{
+		#particles-js{
+			background: $brand;
+			height: 1626px;
 			padding: 0px;
 		}
 	}
@@ -302,23 +352,73 @@ footer
 /**************************
 	SMALLER DEVICES
 **************************/
-@media only screen and (max-width: 325px) {
-	.top-header{
-		.top-header-social-media{
-			.far, .fab{
+@media only screen and (max-width: 325px)
+{
+	.top-header
+	{
+		.top-header-social-media
+		{
+			.far, .fab
+			{
 				font-size: 1.5rem;
 			}
 		}
 	}
 }
-@media only screen and (max-width: 400px) {
-	.main-grid {
-		.about {
-			header {
-				img {
+@media only screen and (max-width: 400px)
+{
+	.main-grid
+	{
+		.about
+		{
+			header
+			{
+				img
+				{
 					min-width: 100%;
 					margin: 0px 0px 15px 0px;
 				}
+			}
+		}
+	}
+}
+
+// Adjust projects & experience description class width.
+@media only screen and (max-width: 3840px)
+{
+	.main-grid
+	{
+		.projects
+		{
+			.description
+			{
+				width: 75%;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 2560px)
+{
+	.main-grid
+	{
+		.projects
+		{
+			.description
+			{
+				width: 50%;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 1920px)
+{
+	.main-grid
+	{
+		.projects
+		{
+			.description
+			{
+				width: 75%;
 			}
 		}
 	}

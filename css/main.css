@@ -108,9 +108,23 @@ button {
   background: #CE4554;
   min-height: 100%;
   padding: 0px;
+  overflow: hidden;
 }
 .main-grid .projects {
   grid-area: projects;
+}
+.main-grid .projects .description {
+  background-color: #F1F1EB;
+  color: #CE4554;
+  position: relative;
+  top: 25px;
+  width: 75%;
+  margin: 0px auto;
+  border-radius: 1%;
+  text-align: center;
+}
+.main-grid .projects .description a {
+  color: #CE4554;
 }
 .main-grid .projects .grid-container {
   display: grid;
@@ -121,11 +135,13 @@ button {
   right: 0px;
   bottom: 0px;
   min-height: 100%;
+  margin-top: 325px;
 }
 .main-grid .projects .grid-container .item1, .main-grid .projects .grid-container .item2, .main-grid .projects .grid-container .item3, .main-grid .projects .grid-container .item4 {
   margin: 15px;
 }
 .main-grid .projects .grid-container .item1 a img, .main-grid .projects .grid-container .item2 a img, .main-grid .projects .grid-container .item3 a img, .main-grid .projects .grid-container .item4 a img {
+  border-radius: 1%;
   max-width: 100%;
   margin: 0px auto;
   cursor: pointer;
@@ -141,13 +157,10 @@ button {
 .main-grid .about h2, .main-grid .skills h2, .main-grid .contact h2 {
   color: #CE4554;
 }
-.main-grid .projects .header h2, .main-grid .projects a {
-  color: #CE4554;
-}
-.main-grid .about, .main-grid .skills, .main-grid .contact, .main-grid .projects, .main-grid .grid-container > * {
+.main-grid .about, .main-grid .skills, .main-grid .contact, .main-grid .projects, .main-grid .projects .description, .main-grid .grid-container > * {
   padding: 25px;
 }
-.main-grid .about p, .main-grid .skills p, .main-grid .contact p, .main-grid .projects p, .main-grid .grid-container > * p {
+.main-grid .about p, .main-grid .skills p, .main-grid .contact p, .main-grid .projects p, .main-grid .projects .description p, .main-grid .grid-container > * p {
   margin: 10px 0px;
 }
 
@@ -167,7 +180,7 @@ footer .footer-social-media .far, footer .footer-social-media .fab {
 /**************************
 	MEDIUM DEVICES
 **************************/
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 1040px) {
   .main-grid {
     max-width: 100%;
     display: flex;
@@ -180,8 +193,13 @@ footer .footer-social-media .far, footer .footer-social-media .fab {
   }
   .main-grid #particles-js {
     background: #CE4554;
-    height: 2248px;
+    height: 2434px;
     padding: 0px;
+  }
+  .main-grid .projects .description {
+    position: static;
+    width: 100%;
+    text-align: left;
   }
   .main-grid .projects .grid-container {
     all: initial;
@@ -197,31 +215,52 @@ footer .footer-social-media .far, footer .footer-social-media .fab {
     margin: 0px auto;
   }
 }
+@media only screen and (max-width: 949px) {
+  .main-grid #particles-js {
+    background: #CE4554;
+    height: 2474px;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 662px) {
+  .main-grid #particles-js {
+    background: #CE4554;
+    height: 2514px;
+    padding: 0px;
+  }
+}
 @media only screen and (max-width: 500px) {
   .main-grid #particles-js {
     background: #CE4554;
-    height: 2000px;
+    height: 2306px;
     padding: 0px;
   }
 }
 @media only screen and (max-width: 450px) {
   .main-grid #particles-js {
     background: #CE4554;
-    height: 1800px;
+    height: 2106px;
     padding: 0px;
   }
 }
 @media only screen and (max-width: 400px) {
   .main-grid #particles-js {
     background: #CE4554;
-    height: 1600px;
+    height: 1946px;
     padding: 0px;
   }
 }
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 350px) {
   .main-grid #particles-js {
     background: #CE4554;
-    height: 1320px;
+    height: 1786px;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .main-grid #particles-js {
+    background: #CE4554;
+    height: 1626px;
     padding: 0px;
   }
 }
@@ -237,5 +276,20 @@ footer .footer-social-media .far, footer .footer-social-media .fab {
   .main-grid .about header img {
     min-width: 100%;
     margin: 0px 0px 15px 0px;
+  }
+}
+@media only screen and (max-width: 3840px) {
+  .main-grid .projects .description {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 2560px) {
+  .main-grid .projects .description {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1920px) {
+  .main-grid .projects .description {
+    width: 75%;
   }
 }/*# sourceMappingURL=main.css.map */
