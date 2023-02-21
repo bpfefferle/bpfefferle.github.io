@@ -213,6 +213,51 @@ footer
 		}
 	}
 }
+
+/**************************
+	DESKTOP DEVICES
+**************************/
+// Adjust projects & experience description class width.
+@media only screen and (max-width: 3840px)
+{
+	.main-grid
+	{
+		.projects
+		{
+			.description
+			{
+				width: 75%;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 2560px)
+{
+	.main-grid
+	{
+		.projects
+		{
+			.description
+			{
+				width: 50%;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 1920px)
+{
+	.main-grid
+	{
+		.projects
+		{
+			.description
+			{
+				width: 75%;
+			}
+		}
+	}
+}
+
 /**************************
 	MEDIUM DEVICES
 **************************/
@@ -343,7 +388,7 @@ footer
 	{
 		#particles-js{
 			background: $brand;
-			height: 1626px;
+			height: 1662px;
 			padding: 0px;
 		}
 	}
@@ -378,47 +423,6 @@ footer
 					min-width: 100%;
 					margin: 0px 0px 15px 0px;
 				}
-			}
-		}
-	}
-}
-
-// Adjust projects & experience description class width.
-@media only screen and (max-width: 3840px)
-{
-	.main-grid
-	{
-		.projects
-		{
-			.description
-			{
-				width: 75%;
-			}
-		}
-	}
-}
-@media only screen and (max-width: 2560px)
-{
-	.main-grid
-	{
-		.projects
-		{
-			.description
-			{
-				width: 50%;
-			}
-		}
-	}
-}
-@media only screen and (max-width: 1920px)
-{
-	.main-grid
-	{
-		.projects
-		{
-			.description
-			{
-				width: 75%;
 			}
 		}
 	}
