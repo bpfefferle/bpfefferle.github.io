@@ -78,11 +78,19 @@ button {
   grid-area: about;
 }
 .main-grid .about img {
-  max-width: 100%;
+  width: 375px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
-.main-grid .about #pic-degree {
-  max-width: 100%;
-  margin-top: 20px;
+.main-grid .about .center {
+  display: flex;
+  justify-content: center;
+}
+.main-grid .about .center #pic-degree {
+  min-width: 100%;
+  margin: 20px auto;
+  text-align: center;
 }
 .main-grid .skills {
   grid-area: skills;
@@ -103,6 +111,7 @@ button {
 }
 .main-grid .skills-grid li img {
   padding: 0.5rem;
+  width: 200px;
 }
 .main-grid #particles-js {
   background: #CE4554;
@@ -116,11 +125,10 @@ button {
 .main-grid .projects .description {
   background-color: #F1F1EB;
   color: #CE4554;
-  position: relative;
-  top: 25px;
-  width: 75%;
-  margin: 0px auto;
-  border-radius: 1%;
+  position: absolute;
+  top: 250px;
+  left: 925px;
+  right: 475px;
   text-align: center;
 }
 .main-grid .projects .description a {
@@ -180,39 +188,28 @@ footer .footer-social-media .far, footer .footer-social-media .fab {
 /**************************
 	DESKTOP DEVICES
 **************************/
-@media only screen and (max-width: 3840px) {
-  .main-grid .projects .description {
-    width: 75%;
-  }
-}
 @media only screen and (max-width: 2560px) {
   .main-grid .projects .description {
-    width: 50%;
+    top: 250px;
+    left: 525px;
+    right: 25px;
   }
 }
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1212px) {
   .main-grid .projects .description {
-    width: 75%;
+    top: 250px;
+    left: 475px;
+    right: 25px;
   }
 }
 /**************************
 	MEDIUM DEVICES
 **************************/
-@media only screen and (max-width: 1040px) {
+@media only screen and (max-width: 1163px) {
   .main-grid {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-  }
-  .main-grid .about header img {
-    max-width: 50%;
-    float: left;
-    margin-right: 20px;
-  }
-  .main-grid #particles-js {
-    background: #CE4554;
-    height: 2434px;
-    padding: 0px;
   }
   .main-grid .projects .description {
     position: static;
@@ -233,53 +230,49 @@ footer .footer-social-media .far, footer .footer-social-media .fab {
     margin: 0px auto;
   }
 }
-@media only screen and (max-width: 949px) {
+@media only screen and (max-width: 700px) {
+  .main-grid .about img {
+    min-width: 100%;
+    margin: 0px auto;
+    float: none;
+    width: 0px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .main-grid .skills-grid li img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1163px) {
   .main-grid #particles-js {
     background: #CE4554;
-    height: 2474px;
+    height: 4746px;
     padding: 0px;
   }
 }
-@media only screen and (max-width: 662px) {
+@media only screen and (max-width: 600px) {
   .main-grid #particles-js {
-    background: #CE4554;
-    height: 2514px;
-    padding: 0px;
+    height: 4342px;
   }
 }
 @media only screen and (max-width: 500px) {
   .main-grid #particles-js {
-    background: #CE4554;
-    height: 2306px;
-    padding: 0px;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .main-grid #particles-js {
-    background: #CE4554;
-    height: 2106px;
-    padding: 0px;
+    height: 3677.268px;
   }
 }
 @media only screen and (max-width: 400px) {
   .main-grid #particles-js {
-    background: #CE4554;
-    height: 1946px;
-    padding: 0px;
+    height: 3048.532px;
   }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 375px) {
   .main-grid #particles-js {
-    background: #CE4554;
-    height: 1786px;
-    padding: 0px;
+    height: 2872.322px;
   }
 }
 @media only screen and (max-width: 300px) {
   .main-grid #particles-js {
-    background: #CE4554;
-    height: 1662px;
-    padding: 0px;
+    height: 2423.8px;
   }
 }
 /**************************
@@ -288,11 +281,5 @@ footer .footer-social-media .far, footer .footer-social-media .fab {
 @media only screen and (max-width: 325px) {
   .top-header .top-header-social-media .far, .top-header .top-header-social-media .fab {
     font-size: 1.5rem;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .main-grid .about header img {
-    min-width: 100%;
-    margin: 0px 0px 15px 0px;
   }
 }/*# sourceMappingURL=main.css.map */

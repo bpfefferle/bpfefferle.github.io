@@ -89,12 +89,21 @@ button
 		grid-area: about;
 		img
 		{
-			max-width: 100%;
+			width: 375px;
+			float: left;
+			margin-right: 20px;
+			margin-bottom: 20px;
 		}
-		#pic-degree
+		.center
 		{
-			max-width: 100%;
-			margin-top: 20px;
+			display: flex;
+			justify-content: center;
+			#pic-degree
+			{
+				min-width: 100%;
+				margin: 20px auto;
+				text-align: center;
+			}
 		}
 	}
 	.skills
@@ -118,6 +127,7 @@ button
 			img
 			{
 				padding: 0.5rem;
+				width: 200px;
 			}
 		}
 	}
@@ -134,11 +144,10 @@ button
 		{
 			background-color: $light;
 			color: $brand;
-			position: relative;
-			top: 25px;
-			width: 75%;
-			margin: 0px auto;
-			border-radius: 1%;
+			position: absolute;
+			top: 250px;
+			left: 925px;
+			right: 475px;
 			text-align: center;
 			a{color: $brand;}
 		}
@@ -218,19 +227,6 @@ footer
 	DESKTOP DEVICES
 **************************/
 // Adjust projects & experience description class width.
-@media only screen and (max-width: 3840px)
-{
-	.main-grid
-	{
-		.projects
-		{
-			.description
-			{
-				width: 75%;
-			}
-		}
-	}
-}
 @media only screen and (max-width: 2560px)
 {
 	.main-grid
@@ -239,12 +235,14 @@ footer
 		{
 			.description
 			{
-				width: 50%;
+				top: 250px;
+				left: 525px;
+				right: 25px;
 			}
 		}
 	}
 }
-@media only screen and (max-width: 1920px)
+@media only screen and (max-width: 1212px)
 {
 	.main-grid
 	{
@@ -252,7 +250,9 @@ footer
 		{
 			.description
 			{
-				width: 75%;
+				top: 250px;
+				left: 475px;
+				right: 25px;
 			}
 		}
 	}
@@ -261,31 +261,19 @@ footer
 /**************************
 	MEDIUM DEVICES
 **************************/
-@media only screen and (max-width: 1040px)
+@media only screen and (max-width: 1163px)
 {
 	.main-grid
 	{
 		max-width: 100%;
 		display: flex;
 		flex-direction: column;
-		.about
-		{
-			header
-			{
-				img
-				{
-					max-width: 50%;
-					float: left;
-					margin-right: 20px;
-				}
-			}
-		}
-		#particles-js
-		{
-			background: $brand;
-			height: 2434px;
-			padding: 0px;
-		}
+		// #particles-js
+		// {
+		// 	background: $brand;
+		// 	height: 2434px;
+		// 	padding: 0px;
+		// }
 		.projects
 		{
 			.description
@@ -313,28 +301,62 @@ footer
 	}
 }
 
+// About me profile image.
+@media only screen and (max-width: 700px)
+{
+	.main-grid
+	{
+		.about
+		{
+			img
+			{
+				min-width: 100%;
+				margin: 0px auto;
+				float: none;
+				width: 0px;
+			}
+		}
+	}
+}
+
+// Skills images.
+@media only screen and (max-width: 450px)
+{
+	.main-grid
+	{
+		.skills-grid
+		{
+			li
+			{
+				img
+				{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
 // Adjust height of canvas element so that project thumbnails fit.
-@media only screen and (max-width: 949px)
+@media only screen and (max-width: 1163px)
 {
 	.main-grid
 	{
 		#particles-js
 		{
 			background: $brand;
-			height: 2474px;
+			height: 4746px;
 			padding: 0px;
 		}
 	}
 }
-@media only screen and (max-width: 662px)
+@media only screen and (max-width: 600px)
 {
 	.main-grid
 	{
 		#particles-js
 		{
-			background: $brand;
-			height: 2514px;
-			padding: 0px;
+			height: 4342px;
 		}
 	}
 }
@@ -342,21 +364,9 @@ footer
 {
 	.main-grid
 	{
-		#particles-js{
-			background: $brand;
-			height: 2306px;
-			padding: 0px;
-		}
-	}
-}
-@media only screen and (max-width: 450px)
-{
-	.main-grid
-	{
-		#particles-js{
-			background: $brand;
-			height: 2106px;
-			padding: 0px;
+		#particles-js
+		{
+			height: 3677.268px;
 		}
 	}
 }
@@ -364,21 +374,19 @@ footer
 {
 	.main-grid
 	{
-		#particles-js{
-			background: $brand;
-			height: 1946px;
-			padding: 0px;
+		#particles-js
+		{
+			height: 3048.532px;
 		}
 	}
 }
-@media only screen and (max-width: 350px)
+@media only screen and (max-width: 375px)
 {
 	.main-grid
 	{
-		#particles-js{
-			background: $brand;
-			height: 1786px;
-			padding: 0px;
+		#particles-js
+		{
+			height: 2872.322px;
 		}
 	}
 }
@@ -386,10 +394,9 @@ footer
 {
 	.main-grid
 	{
-		#particles-js{
-			background: $brand;
-			height: 1662px;
-			padding: 0px;
+		#particles-js
+		{
+			height: 2423.8px;
 		}
 	}
 }
@@ -406,23 +413,6 @@ footer
 			.far, .fab
 			{
 				font-size: 1.5rem;
-			}
-		}
-	}
-}
-@media only screen and (max-width: 400px)
-{
-	.main-grid
-	{
-		.about
-		{
-			header
-			{
-				img
-				{
-					min-width: 100%;
-					margin: 0px 0px 15px 0px;
-				}
 			}
 		}
 	}
